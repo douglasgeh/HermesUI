@@ -1,0 +1,22 @@
+{
+  "name": "HermesUI",
+  "version": "0.1.0",
+  "summary": "A short description of HermesUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/douglasgeh/HermesUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "douglasgeh": "douglas.gehring@neon.com.br"
+  },
+  "source": {
+    "git": "https://github.com/douglasgeh/HermesUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "HermesUI/Classes/**/*"
+}

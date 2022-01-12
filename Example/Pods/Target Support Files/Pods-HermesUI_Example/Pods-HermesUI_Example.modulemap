@@ -1,0 +1,6 @@
+framework module Pods_HermesUI_Example {
+  umbrella header "Pods-HermesUI_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
