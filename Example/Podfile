@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'HermesUI_Example' do
+  pod 'HermesUI', :path => '../'
+
+  target 'HermesUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
