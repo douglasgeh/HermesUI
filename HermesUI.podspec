@@ -32,6 +32,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/**/*'
   
+  s.swift_version = '4.2'
+  
   # s.resource_bundles = {
   #   'HermesUI' => ['HermesUI/Assets/*.png']
   # }
