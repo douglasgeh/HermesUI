@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/**/*'
   
-  s.resource_bundles = {
-    'HermesUI' => ['HermesUI/Assets/*.png']
-  }
+  # s.resource_bundles = {
+  #   'HermesUI' => ['HermesUI/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
