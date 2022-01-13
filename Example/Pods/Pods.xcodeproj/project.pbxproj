@@ -16,7 +16,13 @@
 		E260B191250EF7A59172000C96C997C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EAAD27FBF61B3069C71BD55EF3DEA080 /* Pods-HermesUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F32F67FF0D9078918D7049FBA4EAD56 /* Pods-HermesUI_Tests-dummy.m */; };
 		EC2D6B27BDFE6BBF7FCA257117BE5169 /* HermesUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B00FCA3CAD56054EA2A1B5069765CE20 /* HermesUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA7570940687F6A7EDC2CA9893B6A35F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359AF1E5F377E376568338A206344CA7 /* ReplaceMe.swift */; };
+		EDF4154E278F5DAA00E0FFFF /* HermesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4154D278F5DAA00E0FFFF /* HermesModel.swift */; };
+		EDFF07D4278F4AE5008F950C /* HermesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF07D3278F4AE5008F950C /* HermesButton.swift */; };
+		EDFF07D6278F4D4F008F950C /* HermesButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF07D5278F4D4F008F950C /* HermesButtonViewModel.swift */; };
+		EDFF07D9278F4DFE008F950C /* HermesButtonKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF07D8278F4DFE008F950C /* HermesButtonKind.swift */; };
+		EDFF07DC278F4E65008F950C /* HermesColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF07DB278F4E65008F950C /* HermesColors.swift */; };
+		EDFF07DE278F5B27008F950C /* HermesBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF07DD278F5B27008F950C /* HermesBase.swift */; };
+		EDFF07E2278F5BCA008F950C /* HermesFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF07E1278F5BCA008F950C /* HermesFonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EDF41568278F6E6900E0FFFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		049CF240EA2CBE89BAE6D25E3846B70A /* Pods-HermesUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HermesUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		061B95F12A502645531C71528FE5E889 /* HermesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HermesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +63,6 @@
 		236E99F2082DA30D30F55CB0D2079ECB /* Pods-HermesUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HermesUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		280ECC6F43A729A11144706D3F38824A /* Pods-HermesUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HermesUI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3364F9F0CA698BF319ED071796E09F3F /* HermesUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HermesUI-prefix.pch"; sourceTree = "<group>"; };
-		359AF1E5F377E376568338A206344CA7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HermesUI/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		50C5C0641BB4E6C8C545A9492B665CAE /* Pods-HermesUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HermesUI_Example.modulemap"; sourceTree = "<group>"; };
 		55542215459E37DD21EAA5000FCFDBC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5F32F67FF0D9078918D7049FBA4EAD56 /* Pods-HermesUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HermesUI_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -69,6 +87,13 @@
 		D3EB5203CDB60FAB2FF34BBA7766A10B /* Pods-HermesUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HermesUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC0EB2ED8E7BCFCD837EAB839CC7A806 /* Pods-HermesUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HermesUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DD6ECEB522730C11C1C825C90A1D8124 /* Pods-HermesUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HermesUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EDF4154D278F5DAA00E0FFFF /* HermesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesModel.swift; sourceTree = "<group>"; };
+		EDFF07D3278F4AE5008F950C /* HermesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesButton.swift; sourceTree = "<group>"; };
+		EDFF07D5278F4D4F008F950C /* HermesButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesButtonViewModel.swift; sourceTree = "<group>"; };
+		EDFF07D8278F4DFE008F950C /* HermesButtonKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesButtonKind.swift; sourceTree = "<group>"; };
+		EDFF07DB278F4E65008F950C /* HermesColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesColors.swift; sourceTree = "<group>"; };
+		EDFF07DD278F5B27008F950C /* HermesBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesBase.swift; sourceTree = "<group>"; };
+		EDFF07E1278F5BCA008F950C /* HermesFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesFonts.swift; sourceTree = "<group>"; };
 		FEE4A86ABFD69E9A5DB036006B6C207F /* Pods-HermesUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HermesUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +167,7 @@
 		4716FA77D2B9D161DCCBBF6F7ECA0C62 /* HermesUI */ = {
 			isa = PBXGroup;
 			children = (
-				359AF1E5F377E376568338A206344CA7 /* ReplaceMe.swift */,
+				EDFF07CF278F4AAB008F950C /* Source */,
 				9ACC55EE4561AFC8B36A3724868E6681 /* Pod */,
 				14C9D96D8D87A93BFD3D6692D4B3B08E /* Support Files */,
 			);
@@ -223,6 +248,84 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EDF4154C278F5D9A00E0FFFF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4154D278F5DAA00E0FFFF /* HermesModel.swift */,
+				EDFF07D0278F4AB5008F950C /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EDFF07CF278F4AAB008F950C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4154C278F5D9A00E0FFFF /* Components */,
+				EDFF07DA278F4E59008F950C /* Base */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EDFF07D0278F4AB5008F950C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EDFF07D7278F4DCC008F950C /* Kind */,
+				EDFF07D2278F4AD0008F950C /* Group */,
+				EDFF07D1278F4AC7008F950C /* Single */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EDFF07D1278F4AC7008F950C /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				EDFF07D3278F4AE5008F950C /* HermesButton.swift */,
+				EDFF07D5278F4D4F008F950C /* HermesButtonViewModel.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		EDFF07D2278F4AD0008F950C /* Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		EDFF07D7278F4DCC008F950C /* Kind */ = {
+			isa = PBXGroup;
+			children = (
+				EDFF07D8278F4DFE008F950C /* HermesButtonKind.swift */,
+			);
+			path = Kind;
+			sourceTree = "<group>";
+		};
+		EDFF07DA278F4E59008F950C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EDFF07E0278F5BBE008F950C /* Fonts */,
+				EDFF07DF278F5BBA008F950C /* Colors */,
+				EDFF07DD278F5B27008F950C /* HermesBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EDFF07DF278F5BBA008F950C /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				EDFF07DB278F4E65008F950C /* HermesColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		EDFF07E0278F5BBE008F950C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EDFF07E1278F5BCA008F950C /* HermesFonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -261,6 +364,7 @@
 				5FCEB01DD27F7CC57B0ABD566876D2CC /* Sources */,
 				B55D556E27953D19421028469C5B5D7C /* Frameworks */,
 				06EDD469F648D870F334B8515B7B6AD6 /* Resources */,
+				EDF41568278F6E6900E0FFFF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +421,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					45C1E4188D6CA3EC8ED0A2C69215020B = {
+						LastSwiftMigration = 1250;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,8 +476,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFF07DE278F5B27008F950C /* HermesBase.swift in Sources */,
 				6E048EB12E91B11FD83322FA8E89F1C4 /* HermesUI-dummy.m in Sources */,
-				FA7570940687F6A7EDC2CA9893B6A35F /* ReplaceMe.swift in Sources */,
+				EDFF07DC278F4E65008F950C /* HermesColors.swift in Sources */,
+				EDFF07D6278F4D4F008F950C /* HermesButtonViewModel.swift in Sources */,
+				EDFF07D4278F4AE5008F950C /* HermesButton.swift in Sources */,
+				EDFF07D9278F4DFE008F950C /* HermesButtonKind.swift in Sources */,
+				EDF4154E278F5DAA00E0FFFF /* HermesModel.swift in Sources */,
+				EDFF07E2278F5BCA008F950C /* HermesFonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +525,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 049CF240EA2CBE89BAE6D25E3846B70A /* Pods-HermesUI_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -510,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF018CD09F2A712608EF0B68F2BE9E1D /* HermesUI.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -530,7 +645,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -542,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68BADA6C20E183A25C5265D1A55ED5AB /* HermesUI.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -562,7 +678,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -640,7 +757,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 236E99F2082DA30D30F55CB0D2079ECB /* Pods-HermesUI_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
